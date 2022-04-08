@@ -1,0 +1,5 @@
+@use "variable";
+
+body {
+  background: variable.$main-green;
+}
