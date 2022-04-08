@@ -1,0 +1,24 @@
+{
+  "name": "202204-w1chwe-cristian-bermudez-boris-randebrock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "npx sass sass:css  --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccbabcn/202204-W1CHWE-cristian-bermudez-boris-randebrock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccbabcn/202204-W1CHWE-cristian-bermudez-boris-randebrock/issues"
+  },
+  "homepage": "https://github.com/ccbabcn/202204-W1CHWE-cristian-bermudez-boris-randebrock#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}
