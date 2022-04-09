@@ -1,7 +1,9 @@
 @use "variable";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap");
 
 body {
   background: variable.$main-green;
+  font-family: "Oswald", "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: variable.$layout-breakpoint-mobile) {
@@ -34,6 +36,7 @@ body {
     &__nav {
       color: variable.$main-white;
       display: flex;
+      text-align: center;
       flex-direction: column;
       align-items: center;
     }
@@ -45,6 +48,10 @@ body {
     &__nav ul {
       list-style: none;
       padding-left: 0;
+    }
+    &__placed-x {
+      color: variable.$main-green;
+      padding: 10px 0;
     }
   }
 }
