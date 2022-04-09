@@ -6,11 +6,26 @@ body {
 
 @media screen and (max-width: variable.$layout-breakpoint-mobile) {
   .main-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  .foto-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .foto-card {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foto-card__image {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50%;
+  }
   .footer {
     width: 100%;
     background: variable.$main-black;
