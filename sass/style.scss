@@ -4,8 +4,15 @@ body {
   background: variable.$main-green;
 }
 
-.sti {
-  width: 50px;
-  height: 50px;
-  fill: black;
+@media screen and (max-width: variable.$layout-breakpoint-mobile) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    background: variable.$main-black;
+  }
 }
