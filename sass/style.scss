@@ -11,23 +11,28 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  .foto-section {
-    display: flex;
+  .featured-content {
+    &__image {
+      max-width: 100%;
+    }
+  }
+  .main-section {
+    max-width: 100%;
     flex-direction: column;
   }
   .foto-card {
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .foto-card__image {
-    display: flex;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50%;
+    &__image {
+      max-width: 100%;
+    }
   }
   .footer {
     width: 100%;
+    height: 100%;
     background: variable.$main-black;
+    display: flex;
+
+    &__quote-container {
+      color: variable.$main-green;
+    }
   }
 }
