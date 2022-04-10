@@ -18,13 +18,30 @@
   <body>
     <div class="main-container">
       <header class="header">
-        <div class="header-interior-mobile">
-          <a href="" class="burger-menu"></a>
-          <h1 class="current-page-title">home</h1>
+        <div class="header__mobile">
+          <a href="#footer" class="burger-menu">=</a>
+          <h1 class="current-page-title">Home</h1>
         </div>
-        <div class="logo-mobile">
-          <img src="images/logo.png" alt="pink logo" />
-        </div>
+        <nav class="header__desktop">
+          <ul>
+            <li><a href="index.html" class="header__desktop__link">Home</a></li>
+            <li>
+              <a href="works.html" class="header__desktop__link">Works</a>
+            </li>
+            <li>
+              <img
+                class="header__desktop__image"
+                src="images/logo.png"
+                alt="pink logo"
+              />
+            </li>
+            <li>
+              <a href="about.html" class="header__desktop__link">About</a>
+            </li>
+
+            <li><a href="Contact" class="header__desktop__link">Contact</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="main-section">
         <div class="featured-content">
@@ -33,7 +50,7 @@
             alt="pink car in front of pink petrol station"
             class="featured-content__image"
           />
-          <video src="images/home/media/mp4.mp4"></video>
+          <video controls src="images/home/media/mp4.mp4"></video>
         </div>
         <article class="article">
           <div class="article__container">
@@ -86,41 +103,41 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="footer__quote-container">
           <span class="quote-container__quotes">Lorem</span>
-          <span class="quote-container__quotes"> ipsum</span
-          ><span class="quote-container__quotes"> dolor</span>
+          <span class="quote-container__quotes">ipsum</span
+          ><span class="quote-container__quotes">dolor</span>
         </div>
-        <span class="green-icon">x</span>
-        <nav>
+        <span class="green-icon">X</span>
+        <nav class="footer_nav">
           <ul>
-            <li>Home</li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="works.html">Works</a></li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contac">Contact</a></li>
           </ul>
         </nav>
         <div class="footer__main-container">
           <section class="footer__first-section">
             <h2>Lorem ipsim</h2>
             <span>dolor</span><span>sit amet consecutor</span>
-          </section>
-          <section>
             <h2>Lorem</h2>
             <span>dolor</span><span>sit amet consecutor</span>
           </section>
           <section class="footer__social-section">
             <h2>Lorem Ipsum</h2>
-            <svg width="56" height="56">
-              <use href="#facebook" />
-            </svg>
-            <svg width="56" height="56">
-              <use href="#facebook" />
-            </svg>
-            <svg width="56" height="56">
-              <use href="#facebook" />
-            </svg>
+            <div class="footer__social-section__icons">
+              <svg width="56" height="56">
+                <use href="#facebook" />
+              </svg>
+              <svg width="56" height="56">
+                <use href="#facebook" />
+              </svg>
+              <svg width="56" height="56">
+                <use href="#facebook" />
+              </svg>
+            </div>
           </section>
           <section class="footer__last-section">
             <h2>Lorem ipsum</h2>

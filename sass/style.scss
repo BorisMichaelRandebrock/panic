@@ -58,10 +58,9 @@ body {
 .featured-content {
   display: flex;
   flex-direction: column;
-  &__image {
+  img {
     max-width: 100%;
   }
-
   video {
     display: none;
   }
@@ -69,6 +68,7 @@ body {
 .main-section {
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .article {
   display: flex;
@@ -197,6 +197,14 @@ span {
     }
   }
 
+  .featured-content {
+    img {
+      display: none;
+    }
+    video {
+      display: block;
+    }
+  }
   .about-articles {
     &__3xline {
       display: flex;
