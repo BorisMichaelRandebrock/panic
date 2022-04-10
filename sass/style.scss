@@ -5,7 +5,16 @@ body {
   background: variable.$main-green;
   font-family: "Oswald", "Open Sans", sans-serif;
 }
-
+.main-section-test {
+  width: 100%;
+}
+.column-test {
+  height: 300px;
+  border: 5px solid red;
+}
+.about-articles {
+  width: 100%;
+}
 .main-container {
   width: 100%;
   display: flex;
@@ -18,7 +27,7 @@ body {
   }
 }
 .main-section {
-  max-width: 100%;
+  width: 100%;
   flex-direction: column;
 }
 .article {
@@ -104,4 +113,27 @@ h2 {
 span {
   padding: 10px 0;
   color: variable.$main-green;
+}
+
+.about-articles {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  &__article {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .about-articles {
+    &__3xline {
+      display: flex;
+      flex-direction: row;
+      gap: 10%;
+    }
+    article {
+      flex: 1;
+    }
+  }
 }
