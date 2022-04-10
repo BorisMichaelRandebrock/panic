@@ -140,4 +140,14 @@ span {
       flex: 1;
     }
   }
+  .foto-section {
+    &__3xline {
+      display: flex;
+      flex-direction: row;
+      gap: 10%;
+    }
+    .foto-card {
+      flex: 1;
+    }
+  }
 }
