@@ -149,14 +149,14 @@ span {
       flex: 1;
     }
   }
-  .foto-card-container {
-    flex-direction: row;
-  }
-  .foto-card {
-    flex: 1;
-    &__image {
-      object-fit: cover;
-      height: 100%;
+  .foto-section {
+    &__3xline {
+      display: flex;
+      flex-direction: row;
+      gap: 10%;
+    }
+    .foto-card {
+      flex: 1;
     }
   }
 }
