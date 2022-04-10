@@ -60,7 +60,7 @@ body {
       padding: 10px 0;
     }
     ul {
-      color: varible.$main-white;
+      color: variable.$main-white;
       font-size: 1.25rem;
       list-style: none;
       padding-left: 0;
@@ -69,9 +69,29 @@ body {
       color: variable.$main-green;
       padding: 10px 0;
     }
+    &__main-container {
+      text-align: center;
+
+      section {
+        padding: 15px 0;
+      }
+    }
   }
   .green-icon {
     color: variable.$main-green;
     fill: variable.$main-green;
+  }
+  .svg-defs {
+    display: none;
+  }
+  h2 {
+    padding: 10px 0;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    color: variable.$main-white;
+  }
+  span {
+    padding: 10px 0;
+    color: variable.$main-green;
   }
 }
