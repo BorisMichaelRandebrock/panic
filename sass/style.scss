@@ -6,66 +6,102 @@ body {
   font-family: "Oswald", "Open Sans", sans-serif;
 }
 
-@media screen and (max-width: variable.$layout-breakpoint-mobile) {
-  .main-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .featured-content {
-    &__image {
-      max-width: 100%;
-    }
-  }
-  .main-section {
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured-content {
+  &__image {
     max-width: 100%;
-    flex-direction: column;
   }
-  .article {
+}
+.main-section {
+  max-width: 100%;
+  flex-direction: column;
+}
+.article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &__container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
     text-align: center;
-    &__container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-      align-items: baseline;
-      text-align: center;
+  }
+}
+.foto-card {
+  &__image {
+    max-width: 100%;
+  }
+}
+.footer {
+  text-align: center;
+  &__social-section {
+    svg {
+      position: relative;
+    }
+    use {
+      position: absolute;
+      top: 0px;
+      left: 0px;
     }
   }
-  .foto-card {
-    &__image {
-      max-width: 100%;
-    }
-  }
-  .footer {
-    width: 100%;
-    background: variable.$main-black;
+  width: 100%;
+  background: variable.$main-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__nav {
+    color: variable.$main-white;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    &__nav {
-      color: variable.$main-white;
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__quote-container {
-      font-size: 1.25rem;
-      color: variable.$main-green;
-      padding: 10px 0;
-    }
-    &__nav ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    &__placed-x {
-      color: variable.$main-green;
-      padding: 10px 0;
+  }
+  &__quote-container {
+    font-size: 1.25rem;
+    color: variable.$main-green;
+    padding: 10px 0;
+  }
+  ul {
+    color: variable.$main-white;
+    font-size: 1.25rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  &__placed-x {
+    color: variable.$main-green;
+    padding: 10px 0;
+  }
+  &__main-container {
+    padding-bottom: 100px;
+    text-align: center;
+
+    section {
+      padding: 15px 0;
     }
   }
+}
+.green-icon {
+  color: variable.$main-green;
+  fill: variable.$main-green;
+}
+.svg-defs {
+  display: none;
+}
+h2 {
+  padding: 10px 0;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: variable.$main-white;
+}
+span {
+  padding: 10px 0;
+  color: variable.$main-green;
 }
