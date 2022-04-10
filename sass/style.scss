@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   &__container {
     display: flex;
     flex-direction: row;
@@ -47,6 +48,9 @@ body {
 .foto-card {
   &__image {
     max-width: 100%;
+  }
+  &__text {
+    text-align: center;
   }
 }
 .footer {
