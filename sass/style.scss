@@ -5,7 +5,6 @@ body {
   background: variable.$main-green;
   font-family: "Oswald", "Open Sans", sans-serif;
 }
-
 .main-section-test {
   width: 100%;
 }
@@ -23,10 +22,12 @@ body {
   align-items: center;
 }
 .featured-content {
+  display: flex;
+  flex-direction: column;
   &__image {
     max-width: 100%;
   }
-  &__video {
+  video {
     display: none;
   }
 }
@@ -65,7 +66,6 @@ body {
   }
   max-width: 100%;
 }
-
 .foto-card-container {
   display: flex;
   flex-direction: column;
@@ -148,10 +148,14 @@ span {
 }
 @media screen and (min-width: 601px) {
   .featured-content {
-    &__video {
-      display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    video {
+      display: block;
+      max-width: 100%;
     }
-    &__img {
+    img {
       display: none;
     }
   }
