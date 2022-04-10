@@ -65,7 +65,6 @@ body {
   video {
     display: none;
   }
-
 }
 .main-section {
   width: 100%;
@@ -189,24 +188,15 @@ span {
 }
 
 @media screen and (min-width: 601px) {
-
   .header {
     &__mobile {
-      .featured-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    video {
-      display: block;
-      max-width: 100%;
-    }
-    img {
       display: none;
     }
     &__desktop {
       display: block;
     }
   }
+
   .about-articles {
     &__3xline {
       display: flex;
@@ -223,39 +213,6 @@ span {
   .foto-section {
     .foto-card {
       flex: 1;
-    }
-  }
-  .footer {
-    padding: 0 5%;
-    &_nav {
-      display: none;
-    }
-    &__main-container {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    section {
-      flex: 1;
-    }
-    &__social-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &__icons {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-      }
-    }
-
-    &__first-section {
-      text-align: left;
-    }
-    &__last-section {
-      text-align: right;
     }
   }
 
