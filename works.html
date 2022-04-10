@@ -19,16 +19,22 @@
     <div class="main-container">
       <header class="header">
         <div class="header__mobile">
-          <a href="" class="burger-menu"></a>
+          <a href="#footer" class="burger-menu">=</a>
           <h1 class="current-page-title">home</h1>
         </div>
-        <nav>
+        <nav class="header__desktop">
           <ul>
-            <li><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><img src="images/logo.png" alt="pink logo" /></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
+            <li><a class="header__desktop__link">Home</a></li>
+            <li><a class="header__desktop__link">Works</a></li>
+            <li>
+              <img
+                class="header__desktop__image"
+                src="images/logo.png"
+                alt="pink logo"
+              />
+            </li>
+            <li><a class="header__desktop__link">About</a></li>
+            <li><a class="header__desktop__link">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -266,7 +272,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="footer__quote-container">
           <span class="quote-container__quotes">Lorem</span>
           <span class="quote-container__quotes"> ipsum</span
