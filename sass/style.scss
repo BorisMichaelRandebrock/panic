@@ -131,7 +131,9 @@ body {
     display: inline-block;
     &--close {
       background-position: -186px -90px;
-      fill: variable.$main-green;
+      &:hover {
+        background-position: -186px -102px;
+      }
     }
   }
   a {
@@ -187,17 +189,23 @@ body {
     width: 52px;
     height: 52px;
     display: inline-block;
-    &--faebook {
+    &--facebook {
       background-position: 0 0;
-      fill: variable.$main-green;
+      &:hover {
+        background-position: 0 -108px;
+      }
     }
     &--instagram {
       background-position: -243px 0;
-      fill: variable.$main-green;
+      &:hover {
+        background-position: -243px -108px;
+      }
     }
     &--vimeo {
       background-position: -108px 0;
-      fill: variable.$main-green;
+      &:hover {
+        background-position: -108px -108px;
+      }
     }
   }
 }
