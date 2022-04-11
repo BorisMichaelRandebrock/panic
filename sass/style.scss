@@ -47,7 +47,9 @@ body {
     align-items: center;
   }
   &__desktop {
-    display: none;
+    &__link {
+      display: none;
+    }
     width: 100%;
     ul {
       display: flex;
@@ -287,7 +289,9 @@ span {
       display: none;
     }
     &__desktop {
-      display: block;
+      &__link {
+        display: inline-block;
+      }
     }
   }
 
