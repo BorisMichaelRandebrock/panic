@@ -149,6 +149,12 @@ body {
     text-align: center;
     flex-direction: column;
     align-items: center;
+    a {
+      &:hover {
+        color: variable.$main-pink;
+        text-decoration: line-through;
+      }
+    }
   }
   &__quote-container {
     display: flex;
@@ -158,6 +164,12 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
     flex-direction: row;
+
+    span {
+      &:hover {
+        color: variable.$main-pink;
+      }
+    }
   }
   ul {
     color: variable.$main-white;
@@ -176,6 +188,41 @@ body {
 
     section {
       padding: 15px 0;
+    }
+  }
+
+  h2 {
+    color: variable.$main-white;
+  }
+
+  .first-section {
+    &__span-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      span {
+        &:hover {
+          color: variable.$main-pink;
+        }
+      }
+    }
+  }
+  .last-section {
+    h2 {
+      padding: 20px 0 10px 0;
+    }
+    &__span-container {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+
+      span {
+        &:hover {
+          color: variable.$main-pink;
+        }
+      }
     }
   }
 }
@@ -210,9 +257,6 @@ body {
   }
 }
 
-.svg-defs {
-  display: none;
-}
 h2 {
   padding: 10px 0;
   font-size: 1.25rem;
