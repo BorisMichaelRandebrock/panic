@@ -23,6 +23,9 @@ body {
   display: inline-block;
   &__burger {
     background-position: -163px -1px;
+    &:hover {
+      background-position: -163px -25px;
+    }
   }
 }
 .header {
