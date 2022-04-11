@@ -169,10 +169,12 @@ body {
     padding-top: 50px;
     padding-bottom: 10px;
     flex-direction: row;
+    letter-spacing: 5px;
 
     span {
       &:hover {
-        color: variable.$main-pink;
+        text-decoration: line-through;
+        text-decoration-color: variable.$main-pink;
       }
     }
   }
