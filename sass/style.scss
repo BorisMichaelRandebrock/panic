@@ -348,10 +348,14 @@ span {
       }
     }
 
-    &__first-section {
+    .first-section {
       text-align: left;
+
+      &__span-container {
+        justify-content: left;
+      }
     }
-    &__last-section {
+    .last-section {
       text-align: right;
     }
   }
