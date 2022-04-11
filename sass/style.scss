@@ -52,6 +52,11 @@ body {
       align-items: baseline;
       list-style: none;
       text-align: center;
+      li {
+        :hover {
+          color: variable.$main-pink;
+        }
+      }
     }
 
     li {
