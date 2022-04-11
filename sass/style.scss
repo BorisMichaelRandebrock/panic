@@ -125,16 +125,6 @@ body {
     text-decoration: none;
   }
   text-align: center;
-  &__social-section {
-    svg {
-      position: relative;
-    }
-    use {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-    }
-  }
 
   &__nav {
     color: variable.$main-white;
@@ -169,6 +159,30 @@ body {
 
     section {
       padding: 15px 0;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  &__icons {
+    background-image: url("/images/home/media/media01.svg");
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    &--faebook {
+      background-position: 0 0;
+      fill: variable.$main-green;
+    }
+    &--instagram {
+      background-position: -243px 0;
+      fill: variable.$main-green;
+    }
+    &--vimeo {
+      background-position: -108px 0;
+      fill: variable.$main-green;
     }
   }
 }
