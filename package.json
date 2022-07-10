@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sassing": "sass sass/style.scss css/style.css --watch",
+    "sass": "sass sass/style.scss css/style.css --watch",
     "live-sassing": "sass sass/style.scss css/style.css"
   },
   "repository": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ccbabcn/202204-W1CHWE-cristian-bermudez-boris-randebrock#readme",
   "devDependencies": {
-    "sass": "^1.50.0"
+    "sass": "^1.53.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
